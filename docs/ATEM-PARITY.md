@@ -29,7 +29,7 @@ Instruction evidence in production 1549:
 
 - The dispatcher at 0x2fe498 and 0x2fe500 reads argument zero through string helper 0x5c7dec.
 - Menu handler 0x2f70f0 and multiview handler 0x2fbe04 obtain images, combine a base directory, `ScreenGrabs` and the supplied string, and call common writer 0x2f6f50.
-- The writer references `.png` at 0x8c55d0. Root verified live menu and multiview captures with string `su_probe_20261020`, producing `/home/weston/Documents/Rode/RCV/RcvShows/ScreenGrabs/su_probe_20261020.png`. Menu PNG is 240×320 and multiview PNG is 1920×1080. Both were visually inspected. No unsolicited file response arrived within two seconds. Automated retrieval remains to implement.
+- The writer references `.png` at 0x8c55d0. Root verified live menu and multiview captures with string `su_probe_20261020`, producing `/home/weston/Documents/Rode/RCV/RcvShows/ScreenGrabs/su_probe_20261020.png`. Menu PNG is 237×317 (logical display 240×320) and multiview PNG is 1920×1080. Both were visually inspected. No unsolicited file response arrived within two seconds. The coordinator also verified separate OSC/SSH retrieval and remote screenshot cleanup in rode-usb-protocol/prototypes/coordination/capture_screen.py. Retrieval is not yet integrated into this module.
 
 `experimental_grab_status=sent_capture_unconfirmed` records transport completion only. The module does not claim that an image exists, provide a success feedback, retrieve files, embed RTSP credentials, or launch a firmware mode.
 
