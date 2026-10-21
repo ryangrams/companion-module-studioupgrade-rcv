@@ -3,6 +3,8 @@ import type { RCVInstance } from '../index.js';
 
 export function UpdateVariableDefinitions(instance: RCVInstance): void {
 	instance.variables = [
+		{ variableId: 'experimental_grab_status', name: 'Experimental grab transport status (capture unconfirmed)' },
+		{ variableId: 'experimental_grab_address', name: 'Last experimental grab OSC address' },
 		{ variableId: 'show_name', name: 'Show Name' },
 		{ variableId: 'device_model', name: 'RCV Model' },
 		{ variableId: 'device_name', name: 'RCV Device Name' },

@@ -1,12 +1,12 @@
 {
-	"id": "rode-rcv",
-	"name": "rode-rcv",
-	"shortname": "RCV",
+	"id": "studioupgrade-rcv",
+	"name": "studioupgrade-rcv",
+	"shortname": "SU RCV",
 	"description": "This plugin enables Companion to control RØDECaster Video (RCV) devices.",
 	"version": "0.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-rode-rcv.git",
-	"bugs": "https://github.com/bitfocus/companion-module-rode-rcv/issues",
+	"repository": "git+https://github.com/ryangrams/companion-module-studioupgrade-rcv.git",
+	"bugs": "https://github.com/ryangrams/companion-module-studioupgrade-rcv/issues",
 	"maintainers": [
 		{
 			"name": "RØDE",

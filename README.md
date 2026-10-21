@@ -1,3 +1,9 @@
+# Studio Upgrade RCV research fork
+
+This fork starts from RØDE’s Companion module 1.8.0. It adds an opt-in screenshot command prototype and an [ATEM parity audit](docs/ATEM-PARITY.md). Menu and multiview PNG captures are verified on production 1549. Automated file retrieval remains to implement.
+
+Enable experimental screen grabs in connection settings to expose the action. The transport status variable reports submission only.
+
 ![GitHub Downloads (Total)](https://img.shields.io/github/downloads/bitfocus/companion-module-rode-rcv/total)
 ![GitHub Downloads (Latest Release)](https://img.shields.io/github/downloads/bitfocus/companion-module-rode-rcv/latest/total)
 
