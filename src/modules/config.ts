@@ -3,10 +3,19 @@ import { Regex, type SomeCompanionConfigField } from '@companion-module/base';
 export interface ModuleConfig {
 	ipAddress: string;
 	enableComs: boolean;
+	enableExperimentalGrabs?: boolean;
 }
 
 export function GetConfigFields(): SomeCompanionConfigField[] {
 	return [
+		{
+			type: 'checkbox',
+			id: 'enableExperimentalGrabs',
+			label: 'Enable experimental screen grab commands',
+			width: 12,
+			default: false,
+			tooltip: 'Menu and multiview capture verified on production 1549. File retrieval requires separate verification.',
+		},
 		{
 			type: 'textinput',
 			id: 'ipAddress',

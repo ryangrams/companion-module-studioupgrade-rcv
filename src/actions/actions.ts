@@ -1,3 +1,4 @@
+import { GetExperimentalActions } from './experimental.js';
 import { Regex } from '@companion-module/base';
 import { commands } from '../modules/commands.js';
 import type { RCVInstance } from '../index.js';
@@ -80,6 +81,7 @@ export enum ActionId {
 
 export function UpdateActions(instance: RCVInstance): void {
 	instance.setActionDefinitions({
+		...GetExperimentalActions(instance),
 		[ActionId.control_buttons]: {
 			name: 'Control Buttons',
 			description: 'Assign based on physical buttons on the device',

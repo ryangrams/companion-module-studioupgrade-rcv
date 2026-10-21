@@ -142,6 +142,7 @@ export class RCVInstance extends InstanceBase<ModuleConfig> {
 
 	async configUpdated(config: ModuleConfig): Promise<void> {
 		this.config = config;
+		this.updateActions();
 
 		this.globalSettings.ipAddress = config.ipAddress;
 		this.globalSettings.enableComs = config.enableComs;
